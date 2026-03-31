@@ -1,0 +1,78 @@
+Act as a senior AI/ML engineer and data architect.
+
+Create a detailed, step-by-step pipeline to build a simple Retrieval-Augmented Generation (RAG) system using a Snowflake free tier account.
+
+The goal is to demonstrate how RAG works end-to-end with a simple, easy-to-understand use case (for example: querying a set of PDFs, product manuals, or FAQs).
+
+Requirements:
+
+1. Use Case
+- Pick a simple and realistic use case (e.g., "Chat with your PDFs" or "FAQ assistant").
+- Briefly explain the problem and expected output.
+
+2. Architecture Overview
+- Clearly describe the pipeline stages:
+  - Data ingestion
+  - Data storage in Snowflake
+  - Embedding generation
+  - Vector storage / similarity search
+  - Retrieval
+  - LLM generation
+- Include a simple architecture diagram (ASCII or described).
+
+3. Data Ingestion
+- Show how to load data from at least one of the following:
+  - PDFs
+  - APIs
+  - Text files
+- Include sample code (Python preferred).
+
+4. Snowflake Setup
+- Step-by-step instructions:
+  - Create database, schema, and tables
+  - Store raw data and embeddings
+- Show SQL examples.
+
+5. Embeddings
+- Use a popular embedding model (e.g., OpenAI, Hugging Face, or Snowflake Cortex if possible).
+- Show how to chunk documents and generate embeddings.
+
+6. Vector Search
+- Explain how to implement similarity search:
+  - Using Snowflake features OR
+  - External vector DB (only if necessary, but prefer Snowflake-native approach)
+- Include example queries.
+
+7. RAG Pipeline
+- Combine retrieval + LLM generation.
+- Show how a user query flows through:
+  - Query → embedding → similarity search → context retrieval → LLM response
+
+8. Code Implementation
+- Provide a minimal working Python example:
+  - Data ingestion
+  - Embedding creation
+  - Query + retrieval
+  - Final response generation
+
+9. Testing Scenarios
+- Include at least 3 test queries and expected behavior.
+
+10. Optimization Ideas
+- Briefly mention improvements:
+  - Chunking strategies
+  - Better embeddings
+  - Caching
+  - Evaluation
+
+Constraints:
+- Keep it beginner-friendly but technically correct.
+- Use clear explanations alongside code.
+- Avoid unnecessary complexity.
+- Prefer open/free tools where possible.
+- Ensure everything can run with a Snowflake free tier and minimal setup.
+
+Output format:
+- Use clear sections with headings
+- Include code blocks
+- Keep explanations concise but informative
