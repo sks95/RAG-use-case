@@ -24,7 +24,7 @@ Requirements:
 - Show how to load data from at least one of the following:
   - PDFs
   - APIs
-  - Text files
+  - Text files / CSV
 - Include sample code (Python preferred).
 
 4. Snowflake Setup
